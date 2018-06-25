@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "yarn build-css",
     "build-css": "tcm --pattern 'src/**/!(global).css' --camelCase",
-    "clean-css": "shx rm 'packages/*/src/**/*.css.d.ts' && yarn build-css",
+    "clean-css": "shx rm -f 'src/**/*.css.d.ts' && yarn build-css",
     "precommit": "yarn static-ci && yarn test-ci",
     "static-ci": "yarn format-ci && yarn lint && yarn compile",
     "format": "prettier --write '**/*'",
