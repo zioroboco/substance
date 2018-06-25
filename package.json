@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "format": "prettier --write '**/*'",
+    "compile": "tsc --noEmit",
     "dev": "webpack-dev-server"
   },
   "dependencies": {
