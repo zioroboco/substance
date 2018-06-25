@@ -9,6 +9,21 @@
       "url": "http://localhost:8080*",
       "webRoot": "${workspaceFolder}/src",
       "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "test",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "args": ["--runInBand", "--no-cache"],
+      "runtimeArgs": ["--inspect-brk", "--nolazy"],
+      "protocol": "inspector",
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen",
+      "stopOnEntry": false,
+      "smartStep": true,
+      "sourceMaps": true
     }
   ]
 }
