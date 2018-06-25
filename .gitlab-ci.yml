@@ -5,6 +5,7 @@ before_script:
 
 stages:
   - Test
+  - Deploy
 
 static:
   stage: Test
@@ -15,3 +16,13 @@ test:
   stage: Test
   script:
     - yarn test-ci
+
+deploy-test:
+  stage: Deploy
+  only:
+    - master
+  script:
+    - yarn global add serverless serverless-finch
+    - yarn deploy --no-confirm
+  variables:
+    STAGE: "test"
