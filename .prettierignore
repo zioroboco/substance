@@ -1,0 +1,14 @@
+*.md
+*.css.d.ts
+dist/
+.build/
+.serverless/
+/coverage
+package.json
+node_modules/
+/yarn*
+/.git*
+/.DS_Store
+/.prettier*
+*.html
+/LICENSE
