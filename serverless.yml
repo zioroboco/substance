@@ -1,0 +1,24 @@
+service: substance
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  region: ${env:AWS_DEFAULT_REGION, "us-east-1"}
+  stage: ${env:STAGE, "dev"}
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: substance-deployment-${self:provider.stage}
+    distributionFolder: dist
+
+resources:
+  Description: Substance!
+  DeploymentBucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: ${self:custom.client.bucketName}

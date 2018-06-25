@@ -15,7 +15,8 @@
     "test": "jest",
     "test-ci": "jest --coverage --ci --no-cache --runInBand",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "yarn build && sls client deploy"
   },
   "dependencies": {
     "@types/jest": "^23.1.1",
