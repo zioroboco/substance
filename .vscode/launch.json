@@ -6,7 +6,7 @@
       "request": "attach",
       "name": "dev",
       "port": 9222,
-      "url": "http://localhost:3737*",
+      "url": "http://localhost:8080*",
       "webRoot": "${workspaceFolder}/src",
       "sourceMaps": true
     }

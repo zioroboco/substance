@@ -39,7 +39,7 @@ module.exports = {
   },
   devServer: {
     host: "localhost",
-    port: "3737",
+    port: 8080,
     hot: true
   },
   plugins: [
