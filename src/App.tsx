@@ -6,3 +6,5 @@ const App = (): JSX.Element => (
 )
 
 export default hot(module)(App)
+
+export { App }
