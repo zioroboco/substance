@@ -16,7 +16,7 @@ custom:
     distributionFolder: dist
 
 resources:
-  Description: Substance!
+  Description: substance
   DeploymentBucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Delete
