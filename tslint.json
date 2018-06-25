@@ -1,0 +1,21 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "member-access": false,
+    "no-shadowed-variable": false,
+    "interface-over-type-literal": false,
+    "interface-name": false,
+    "no-duplicate-switch-case": true,
+    "no-switch-case-fall-through": true,
+    "no-unused-variable": true,
+    "object-literal-sort-keys": false,
+    "switch-default": true,
+    "no-implicit-dependencies": false,
+    "no-redundant-jsdoc": true,
+    "only-arrow-functions": true,
+    "arrow-return-shorthand": [true, "multiline"],
+    "typedef": [true, "call-signature"],
+    "no-unnecessary-type-assertion": true,
+    "no-parameter-reassignment": true
+  }
+}
