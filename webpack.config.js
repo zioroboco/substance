@@ -15,7 +15,6 @@ module.exports = {
             options: {
               plugins: [
                 "babel-plugin-syntax-typescript",
-                "babel-plugin-syntax-decorators",
                 "babel-plugin-syntax-jsx",
                 "react-hot-loader/babel"
               ]
