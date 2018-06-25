@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "precommit": "yarn static-ci && yarn test-ci",
+    "static-ci": "yarn format-ci && yarn lint && yarn compile",
     "format": "prettier --write '**/*'",
+    "format-ci": "prettier --list-different '**/*'",
     "lint": "tslint --project .",
     "compile": "tsc --noEmit",
     "test": "jest",
+    "test-ci": "jest --coverage --ci --no-cache --runInBand",
     "dev": "webpack-dev-server"
   },
   "dependencies": {
