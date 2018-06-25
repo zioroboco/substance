@@ -22,7 +22,7 @@ deploy-test:
   only:
     - master
   script:
-    - yarn global add serverless serverless-finch
+    - yarn global add serverless
     - yarn deploy --no-confirm
   variables:
     STAGE: "test"
