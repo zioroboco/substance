@@ -13,7 +13,7 @@
     "lint": "tslint --project .",
     "compile": "tsc --noEmit",
     "test": "jest",
-    "test-ci": "jest --coverage --ci --no-cache --runInBand",
+    "test-ci": "jest --coverage --ci --no-cache",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "deploy": "yarn build && sls client deploy"
